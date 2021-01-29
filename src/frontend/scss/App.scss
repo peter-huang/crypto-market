@@ -1,0 +1,146 @@
+html, body{
+    background-color: #343a40;
+
+}
+.container-fluid{
+    /* border: 5px red solid; */
+}
+
+.row{
+    /* border: 5px green solid;*/
+}
+
+[class*="col-"]{
+    /*border: 5px blue solid;*/
+}
+
+
+#particles-container{
+    position: relative;
+}
+
+#particles-js{
+    /*border: 5px rgb(192, 255, 236) solid;*/
+    height: 500px;
+    width: 100%;
+  
+}
+
+
+.main-nav{
+
+    background-color: transparent;
+
+    .main-nav__logo{
+
+        img{
+            max-width: 50% !important;
+            height: auto;
+            padding: 0.25em;
+        }
+    }
+    
+    
+    .main-nav__links{
+        
+        ul{
+            list-style-type: none;
+    
+            li{
+                display: inline;
+
+                a{
+                    text-decoration: none;
+                    color: lightblue;
+                    padding: 0em 2em;
+        
+                    &:hover{
+                        color:lighten(lightblue, 0.25);
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+  
+
+.main-nav--fadeIn{
+    //animation-name: fadeIn;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+
+    background-color: red;
+
+    .main-nav__links{
+
+        ul{
+            li{
+                color: black;
+                a{
+                    color: white;
+
+                    &:hover{
+                        color: black;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+.main-nav--fadeOut{
+    //animation-name: fadeOut;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+
+    .main-nav__links{
+        ul{
+            li{
+                a{
+                    text-decoration: none;
+                    color: lightblue;
+                    padding: 0em 2em;
+        
+                    &:hover{
+                        color:lighten(lightblue, 0.25);
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@keyframes fadeIn{
+    0%{
+        background-color: transparent;
+        transform: scaleY(1);
+        
+    }
+    100%{
+        background-color:  #3765af ;
+        transform: scaleY(1.25);
+    
+    }
+}
+
+
+@keyframes fadeOut{
+    0%{
+        background-color: rgb(150, 150, 150);
+        transform: scaleY(1.25);
+    }
+    100%{
+        background-color: transparent;
+        transform: scaleY(1);
+    }
+}
+
+
+  

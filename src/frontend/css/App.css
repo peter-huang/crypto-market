@@ -1,0 +1,111 @@
+html, body {
+  background-color: #343a40;
+}
+
+.container-fluid {
+  /* border: 5px red solid; */
+}
+
+.row {
+  /* border: 5px green solid;*/
+}
+
+[class*="col-"] {
+  /*border: 5px blue solid;*/
+}
+
+#particles-container {
+  position: relative;
+}
+
+#particles-js {
+  /*border: 5px rgb(192, 255, 236) solid;*/
+  height: 500px;
+  width: 100%;
+}
+
+.main-nav {
+  background-color: transparent;
+}
+
+.main-nav .main-nav__logo img {
+  max-width: 50% !important;
+  height: auto;
+  padding: 0.25em;
+}
+
+.main-nav .main-nav__links ul {
+  list-style-type: none;
+}
+
+.main-nav .main-nav__links ul li {
+  display: inline;
+}
+
+.main-nav .main-nav__links ul li a {
+  text-decoration: none;
+  color: lightblue;
+  padding: 0em 2em;
+}
+
+.main-nav .main-nav__links ul li a:hover {
+  color: #aed8e6;
+}
+
+.main-nav--fadeIn {
+  animation-duration: .25s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  background-color: red;
+}
+
+.main-nav--fadeIn .main-nav__links ul li {
+  color: black;
+}
+
+.main-nav--fadeIn .main-nav__links ul li a {
+  color: white;
+}
+
+.main-nav--fadeIn .main-nav__links ul li a:hover {
+  color: black;
+}
+
+.main-nav--fadeOut {
+  animation-duration: .25s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.main-nav--fadeOut .main-nav__links ul li a {
+  text-decoration: none;
+  color: lightblue;
+  padding: 0em 2em;
+}
+
+.main-nav--fadeOut .main-nav__links ul li a:hover {
+  color: #aed8e6;
+}
+
+@keyframes fadeIn {
+  0% {
+    background-color: transparent;
+    transform: scaleY(1);
+  }
+  100% {
+    background-color: #3765af;
+    transform: scaleY(1.25);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    background-color: #969696;
+    transform: scaleY(1.25);
+  }
+  100% {
+    background-color: transparent;
+    transform: scaleY(1);
+  }
+}
+/*# sourceMappingURL=App.css.map */

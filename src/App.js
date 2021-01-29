@@ -7,21 +7,17 @@ function App() {
     <Container fluid>
       <Row>
         <Col className="px-0">
-         <MainNav></MainNav>
+          <MainNav />
+          <Particle />
+  
         </Col>
       </Row>
 
-      <Row>
-        <Col xs={12} sm={12} className="px-0">
-
-        <Particle />
-
-        </Col>
-
-      </Row>
       
       <Row>
-        <Col xs={12} sm={12}>Test</Col>
+        <Col xs={12} sm={12}>
+        Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />Test<br />
+        </Col>
 
       </Row>
     </Container>
