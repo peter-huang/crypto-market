@@ -1,4 +1,5 @@
 import {useEffect, useState, useRef, useLayoutEffect} from "react";
+import logo from "./image/logo.svg";
 
 function MainNav(){
 
@@ -44,17 +45,17 @@ function MainNav(){
 
         <header ref={containerRef}  className="main-nav main-nav--fadeOut fixed-top container-fluid">
 
-            <div class="row">
-                <div class="col d-flex align-items-center justify-content-between">
-                    <div class="main-nav__logo">
-                        <img class="img-fluid" alt="alternate logo" src="https://icons-for-free.com/iconfiles/png/128/logo+react+react+js+icon-1320184811840217251.png" />
+            <div className="row">
+                <div className="col d-flex justify-content-between">
+                    <div className="main-nav__logo">
+                        <img className="img-fluid" alt="alternate logo" src={logo} />
                     </div>
 
-                    <div class="main-nav__links">
+                    <div className="main-nav__links d-flex justify-content-center">
                         <ul>
-                            <li><a href="#link1">Test1</a></li>
-                            <li><a href="#link2">Test2</a></li>
-                            <li><a href="#link3">Test3</a></li>
+                            <li><a href="#link1">Link 1</a></li>
+                            <li><a href="#link2">Link 2</a></li>
+                            <li><a href="#link3">Link 3</a></li>
                         </ul>
                     </div>
                 </div>

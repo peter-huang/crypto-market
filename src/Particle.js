@@ -9,7 +9,7 @@ function Particle(){
 
             <div id="particles-container">
 
-              <div class="">
+              <div className="">
 
               </div>
               <Particles
