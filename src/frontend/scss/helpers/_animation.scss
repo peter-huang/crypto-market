@@ -1,0 +1,20 @@
+@include keyframes("navbar-fadeIn"){
+    0%{
+        background-color: $navbar-links--secondary;
+    }
+    100%{
+        background-color: $navbar-bg;
+    
+    }
+}
+
+@include keyframes("navbar-fadeOut"){
+    0%{
+        background-color: $navbar-links--base;
+    }
+    100%{
+        background-color: transparent;
+    }
+}
+
+

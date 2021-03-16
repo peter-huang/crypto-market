@@ -1,0 +1,88 @@
+.navbar{
+  
+
+    background-color: transparent;
+
+
+    .navbar__logo{
+
+        svg{
+            fill: $logo-base;
+        }
+    }
+    
+    .navbar__links{
+
+    
+        ul{        
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+     
+            margin-block-end: 0 !important;
+ 
+            li{
+
+                a{
+                    text-decoration: none;
+                    color: $navbar-links--base;
+                    padding: 0em 2em;
+        
+                    &:hover{
+                        color:lighten($navbar-links--base, 25%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.navbar--fadeIn{
+    animation-name: navbar-fadeIn;
+    animation-duration: 1.25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    background-color: $navbar-bg;
+
+    .navbar__links{
+
+        ul{
+            li{
+                color: black;
+                a{
+                    color: $navbar-links--secondary;
+
+                    &:hover{
+                        color: darken($navbar-links--secondary, 25%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.navbar--fadeOut{
+    animation-name: navbar-fadeOut;
+    animation-duration: 1.25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+
+    .navbar__links{
+        ul{
+            li{
+                a{
+                    text-decoration: none;
+                    color: $navbar-links--base;
+                    padding: 0em 2em;
+        
+                    &:hover{
+                        color: lighten($navbar-links--base, 25%);
+                    }
+                }
+            }
+        }
+    }
+}

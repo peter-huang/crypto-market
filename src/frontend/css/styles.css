@@ -1,0 +1,204 @@
+/* Background */
+/* Navbar */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* line 3, ../crypto-market/src/frontend/scss/base/_globals.scss */
+html, body {
+  background-color: #343a40;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+/* line 7, ../crypto-market/src/frontend/scss/base/_globals.scss */
+.container-fluid {
+  border: 0px red solid;
+}
+
+/* line 11, ../crypto-market/src/frontend/scss/base/_globals.scss */
+.row {
+  border: 0px green solid;
+}
+
+/* line 15, ../crypto-market/src/frontend/scss/base/_globals.scss */
+[class*="col-"] {
+  border: 0px yellow solid;
+}
+
+/* line 20, ../crypto-market/src/frontend/scss/base/_globals.scss */
+#particles-container {
+  position: relative;
+}
+
+/* line 24, ../crypto-market/src/frontend/scss/base/_globals.scss */
+#particles-js {
+  /*border: 0px rgb(192, 255, 236) solid;*/
+  width: 100%;
+}
+
+/* line 1, ../crypto-market/src/frontend/scss/components/_navigation.scss */
+.navbar {
+  background-color: transparent;
+}
+
+/* line 9, ../crypto-market/src/frontend/scss/components/_navigation.scss */
+.navbar .navbar__logo svg {
+  fill: #17cf97;
+}
+
+/* line 17, ../crypto-market/src/frontend/scss/components/_navigation.scss */
+.navbar .navbar__links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 0 !important;
+}
+
+/* line 27, ../crypto-market/src/frontend/scss/components/_navigation.scss */
+.navbar .navbar__links ul li a {
+  text-decoration: none;
+  color: #42d1f5;
+  padding: 0em 2em;
+}
+
+/* line 32, ../crypto-market/src/frontend/scss/components/_navigation.scss */
+.navbar .navbar__links ul li a:hover {
+  color: #bbeffb;
+}
+
+/* line 42, ../crypto-market/src/frontend/scss/components/_navigation.scss */
+.navbar--fadeIn {
+  animation-name: navbar-fadeIn;
+  animation-duration: 1.25s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  background-color: #3765af;
+}
+
+/* line 52, ../crypto-market/src/frontend/scss/components/_navigation.scss */
+.navbar--fadeIn .navbar__links ul li {
+  color: black;
+}
+
+/* line 54, ../crypto-market/src/frontend/scss/components/_navigation.scss */
+.navbar--fadeIn .navbar__links ul li a {
+  color: white;
+}
+
+/* line 57, ../crypto-market/src/frontend/scss/components/_navigation.scss */
+.navbar--fadeIn .navbar__links ul li a:hover {
+  color: #bfbfbf;
+}
+
+/* line 67, ../crypto-market/src/frontend/scss/components/_navigation.scss */
+.navbar--fadeOut {
+  animation-name: navbar-fadeOut;
+  animation-duration: 1.25s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+/* line 76, ../crypto-market/src/frontend/scss/components/_navigation.scss */
+.navbar--fadeOut .navbar__links ul li a {
+  text-decoration: none;
+  color: #42d1f5;
+  padding: 0em 2em;
+}
+
+/* line 81, ../crypto-market/src/frontend/scss/components/_navigation.scss */
+.navbar--fadeOut .navbar__links ul li a:hover {
+  color: #bbeffb;
+}
+
+@-webkit-keyframes navbar-fadeIn {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: #3765af;
+  }
+}
+
+@-moz-keyframes navbar-fadeIn {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: #3765af;
+  }
+}
+
+@-ms-keyframes navbar-fadeIn {
+  /* line 2, ../crypto-market/src/frontend/scss/helpers/_animation.scss */
+  0% {
+    background-color: white;
+  }
+  /* line 5, ../crypto-market/src/frontend/scss/helpers/_animation.scss */
+  100% {
+    background-color: #3765af;
+  }
+}
+
+@-o-keyframes navbar-fadeIn {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: #3765af;
+  }
+}
+
+@keyframes navbar-fadeIn {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: #3765af;
+  }
+}
+
+@-webkit-keyframes navbar-fadeOut {
+  0% {
+    background-color: #42d1f5;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@-moz-keyframes navbar-fadeOut {
+  0% {
+    background-color: #42d1f5;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@-ms-keyframes navbar-fadeOut {
+  /* line 12, ../crypto-market/src/frontend/scss/helpers/_animation.scss */
+  0% {
+    background-color: #42d1f5;
+  }
+  /* line 15, ../crypto-market/src/frontend/scss/helpers/_animation.scss */
+  100% {
+    background-color: transparent;
+  }
+}
+
+@-o-keyframes navbar-fadeOut {
+  0% {
+    background-color: #42d1f5;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes navbar-fadeOut {
+  0% {
+    background-color: #42d1f5;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
